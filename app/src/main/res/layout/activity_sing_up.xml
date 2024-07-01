@@ -9,18 +9,19 @@
     tools:context=".SingUpActivity">
 
     <!-- Titimage  -->
-    <View
+    <ImageView
         android:id="@+id/ti_image"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:src="@drawable/welcome"
         app:layout_constraintBottom_toTopOf="@+id/text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHeight_percent="0.35"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"/>
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
 
     <!-- 입력 -->
     <TableLayout
@@ -50,13 +51,18 @@
                 android:textStyle="bold" />
         </TableRow>
 
-        <TableRow android:layout_marginBottom="15dp">
+        <TableRow android:layout_marginBottom="15dp"
+            android:background="@drawable/showe"
+            android:paddingEnd="1.5dp"
+            android:paddingBottom="1.5dp">
 
             <EditText
                 android:id="@+id/et_name"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="1"
+                android:background="@drawable/button"
+                android:paddingStart="20dp"
                 android:gravity="center_vertical"
                 android:hint="이름을 입력하세요."
                 android:textSize="20sp"
@@ -77,15 +83,20 @@
                 android:textStyle="bold" />
         </TableRow>
 
-        <TableRow android:layout_marginBottom="15dp">
+        <TableRow android:layout_marginBottom="15dp"
+            android:background="@drawable/showe"
+            android:paddingEnd="1.5dp"
+            android:paddingBottom="1.5dp">
 
             <EditText
                 android:id="@+id/et_id"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:hint="아이디를 입력하세요."
                 android:textSize="20sp"
+                android:paddingStart="20dp"
+                android:background="@drawable/button"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -103,14 +114,19 @@
                 android:textStyle="bold" />
         </TableRow>
 
-        <TableRow>
+        <TableRow
+            android:background="@drawable/showe"
+            android:paddingEnd="1.5dp"
+            android:paddingBottom="1.5dp">
 
             <EditText
                 android:id="@+id/et_pw"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:hint="비밀번호를 입력하세요."
+                android:paddingStart="20dp"
+                android:background="@drawable/button"
                 android:inputType="textPassword"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -125,7 +141,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent="0.30"
+        app:layout_constraintHeight_percent="0.20"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text"
         android:layout_marginStart="20dp"
